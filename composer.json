@@ -17,7 +17,10 @@
             "role": "PHP Developer"
         }
     ],
-    "repositories": {},
+    "support": {
+        "issues": "https://github.com/tal7aouy/yaml-parser/issues",
+        "source": "https://github.com/tal7aouy/yaml-parser"
+    },
     "autoload": {
         "psr-4": {
             "Tal7aouy\\YamlParser\\": "src/"
@@ -34,7 +37,10 @@
         "symfony/var-dumper": "^6.0"
     },
     "scripts": {
-        "test": "./vendor/bin/pest"
+        "test": [
+            "@composer install",
+            "vendor/bin/phpunit"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

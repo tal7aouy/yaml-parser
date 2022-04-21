@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tal7aouy\YamlParser;
 
-use Tal7aouy\YamlParser\Exceptions\ParserException;
 use Symfony\Component\Yaml\Yaml;
+use Tal7aouy\YamlParser\Exceptions\ParserException;
 
 final class Parser
 {
